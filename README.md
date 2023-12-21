@@ -1,6 +1,9 @@
 # Drew Hermanson Portfolio
 A work in progress personal portfolio that is updated as I progress through the full stack development course.
 
+## Portfolio URL
+https://drewhermanson.github.io/DrewHermPortfolio/
+
 ## User Story
 
 ```
@@ -8,7 +11,6 @@ AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
-
 
 ## Acceptance Criteria
 
