@@ -75,7 +75,6 @@ nav a:hover {
 section {
     padding: 2%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -120,21 +119,113 @@ section {
     text-align: right;
     color: var(--oxley);
     padding: 1%;
-    min-width: 175px;
     border-right: 3px solid var(--oxley);
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+}
+
+.workCol{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    flex-direction: column;
+    width: 90%;
+}
+
+.workCol p{
+    text-align: start;
+    position: absolute;
+    bottom: 50px;
+    font-size: 3rem;
+    background-color: var(--oxley);
 }
 
 
+.mainWork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
 
+.horiseon{
+    background-image: url("../images/w1img.png");
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin: 0px 5px;
+    border: 10px solid var(--oxley);
+}
 
+.testImgOne{
+    background-image: url("../images/testing.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 190px;
+    width: 100%;
+    margin: 0px 5px;
+    border: 10px solid var(--oxley);
+}
+
+.testImgTwo{
+    background-image: url("../images/testing.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 190px;
+    width: 100%;
+    margin: 0px 5px;
+    border: 10px solid var(--oxley);
+}
+
+.botWork{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+section p{
+    padding: 1%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--oxley);
+}
+
+section li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: var(--oxley);
+   
+}
+
+section a:hover {
+    color: var(--snow-drift);
+}
+
+ul a:hover {
+    color: var(--green-smoke);
+}
 
 
 footer {
