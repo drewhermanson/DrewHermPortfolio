@@ -1,0 +1,147 @@
+:root {
+    --green-smoke: #95aa63;
+    --oxley: #6f9580;
+    --pale-leaf: #bfcab4;
+    --snow-drift: #e4e4dc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Page color and text color */
+::selection {
+    background-color: var(--snow-drift);
+    color: var(--pale-leaf);
+}
+
+/*set font size here*/
+html {
+    font-size: 60%;
+}
+
+body {
+    min-width: fit-content;
+    min-height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    color: var(--pale-leaf);
+    background-color: var(--snow-drift);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--green-smoke);
+    color: var(--snow-drift);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-right: 30px;
+    font-size: 3rem;
+    text-align: right;
+    color: var(--oxley);
+    padding: 1%;
+    min-width: 175px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 400px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--snow-drift);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: var(--pale-leaf);
+}
+
+section {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    position: relative;
+    width: auto;
+    background-image: url("../images/temp.jpg");
+    background-repeat: none;
+    background-position:top;
+    background-size:cover;
+    display: flex;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+.banner h2 {
+    position: absolute;
+    background-color: var(--green-smoke);
+    right: 1px;
+    bottom: 10px;
+    color: var(--snow-drift);
+    -webkit-text-stroke: .5px black;
+}
+
+.banner img{
+    padding: 1%;
+    position: absolute;
+    width: 20%;
+    height: 90%;
+    left: 20px;
+    bottom: 10px;
+}
+
+.sectionHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: end;
+    margin-right: 30px;
+    font-size: 3rem;
+    text-align: right;
+    color: var(--oxley);
+    padding: 1%;
+    min-width: 175px;
+    border-right: 3px solid var(--oxley);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 2rem;
+    background-color: var(--green-smoke);
+    color: var(--snow-drift)
+}
