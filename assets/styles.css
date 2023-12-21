@@ -1,11 +1,14 @@
+/*Sets color shortcuts*/
 :root {
+
     --green-smoke: #95aa63;
     --oxley: #6f9580;
     --pale-leaf: #bfcab4;
     --snow-drift: #e4e4dc;
 }
-
+/*setting box sizing for the entire document*/
 * {
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,11 +20,11 @@
     color: var(--pale-leaf);
 }
 
-/*set font size here*/
+/*sets font size*/
 html {
     font-size: 60%;
 }
-
+/*Sets page parameters*/
 body {
     min-width: fit-content;
     min-height: fit-content;
@@ -30,7 +33,7 @@ body {
     color: var(--pale-leaf);
     background-color: var(--snow-drift);
 }
-
+/*header color, flex, and alignment*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -40,11 +43,11 @@ header {
     background-color: var(--green-smoke);
     color: var(--snow-drift);
 }
-
+/*header heading font size*/
 h1 {
     font-size: 3rem;
 }
-
+/*header settings for headers within content sections*/
 h2 {
     margin-right: 30px;
     font-size: 3rem;
@@ -53,7 +56,7 @@ h2 {
     padding: 1%;
     min-width: 175px;
 }
-
+/*nav list settings*/
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -61,24 +64,24 @@ nav ul {
     min-width: 400px;
     list-style: none;
 }
-
+/*nav link settings*/
 nav a {
     color: var(--snow-drift);
     font-weight: bold;
     font-size: 2rem;
 }
-
+/*adds color on nav links when hovering*/
 nav a:hover {
     color: var(--pale-leaf);
 }
-
+/*flexbox and padding added to all content secions*/
 section {
     padding: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/*banner image settings*/
 .banner {
     position: relative;
     width: auto;
@@ -90,7 +93,7 @@ section {
     min-height: 400px;
     margin-bottom: 20px;
 }
-
+/*banner text settings*/
 .banner h2 {
     position: absolute;
     background-color: var(--green-smoke);
@@ -99,16 +102,17 @@ section {
     color: var(--snow-drift);
     -webkit-text-stroke: .5px black;
 }
-
+/*Face picture settings to overlay on banner*/
 .banner img{
     padding: 1%;
     position: absolute;
-    width: 20%;
+   
+    max-width: 40%;
     height: 90%;
     left: 20px;
     bottom: 10px;
 }
-
+/*class for headers on about me and contact me*/
 .sectionHeader{
     display: flex;
     flex-wrap: wrap;
@@ -121,14 +125,28 @@ section {
     padding: 1%;
     border-right: 3px solid var(--oxley);
 }
-
+/*class for work header to fix border issue*/
+.workHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: end;
+    margin-right: 30px;
+    font-size: 3rem;
+    text-align: right;
+    color: var(--oxley);
+    padding: 1%;
+    border-right: 3px solid var(--oxley);
+    line-height: 480px;
+}
+/*flexbox settings specifically for text in content*/
 .row{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 90%;
 }
-
+/*flexbox settings for work content*/
 .workCol{
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +155,7 @@ section {
     flex-direction: column;
     width: 90%;
 }
-
+/*text settings within work content*/
 .workCol p{
     text-align: start;
     position: absolute;
@@ -146,16 +164,16 @@ section {
     background-color: var(--oxley);
 }
 
-
+/*flexbox settings for the main work*/
 .mainWork{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 400px;
     width: 100%;
 }
-
+/*img settings for the first work*/
 .horiseon{
     background-image: url("../images/w1img.png");
     background-size: cover;
@@ -164,8 +182,13 @@ section {
     width: 100%;
     margin: 0px 5px;
     border: 10px solid var(--oxley);
+    opacity: 75%;
 }
-
+/*adds full opacity on hover*/
+.horiseon:hover{
+    opacity: 100%;
+}
+/*img settings for upcoming work*/
 .testImgOne{
     background-image: url("../images/testing.png");
     background-size: cover;
@@ -175,8 +198,13 @@ section {
     width: 100%;
     margin: 0px 5px;
     border: 10px solid var(--oxley);
+    opacity: 75%;
 }
-
+/*adds full opacity on hover*/
+.testImgOne:hover{
+    opacity: 100%;
+}
+/*img settings for upcoming work*/
 .testImgTwo{
     background-image: url("../images/testing.png");
     background-size: cover;
@@ -186,29 +214,33 @@ section {
     width: 100%;
     margin: 0px 5px;
     border: 10px solid var(--oxley);
+    opacity: 75%;
 }
-
+/*adds full opacity on hover*/
+.testImgTwo:hover{
+    opacity: 100%;
+}
+/*container for secondary works*/
 .botWork{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-
 }
-
+/*defines paragraphs within the content section*/
 section p{
     padding: 1%;
     text-align: center;
     font-size: 2rem;
     color: var(--oxley);
 }
-
+/*adds margins to lists within section*/
 section li{
     margin-left: 20px;
     margin-right: 20px;
 }
-
+/*defines ul flexbox properties in section*/
 section ul {
     display: flex;
     align-items: center;
@@ -216,18 +248,16 @@ section ul {
     text-decoration: underline;
     font-size: 2rem;
     color: var(--oxley);
-   
 }
-
+/*adds color when hovering on links in section*/
 section a:hover {
     color: var(--snow-drift);
 }
-
+/*adds a different color on hovering on links in section due to background color differences*/
 ul a:hover {
     color: var(--green-smoke);
 }
-
-
+/*flexbox layout for footer*/
 footer {
     display: flex;
     justify-content: center;
@@ -235,4 +265,41 @@ footer {
     font-size: 2rem;
     background-color: var(--green-smoke);
     color: var(--snow-drift)
+}
+/*allows banner img to dynamically stretch better*/
+@media screen and (max-width: 1920px) {
+    .banner img{
+        position: absolute;
+        min-width: 20%;
+        height: 90%;
+        left: 20px;
+        bottom: 10px;
+    }
+}
+/*media query to fix banner img on smaller sizes.*/
+@media screen and (max-width: 1100px) {
+    .banner img{
+        position: absolute;
+        min-width: 30%;
+        width: 35%;
+        height: 90%;
+        left: 20px;
+        bottom: 10px;
+    }
+}
+/*more banner img settings at lower sizes, specifically pushing the image above the text. list fixes within section at lower res*/
+@media screen and (max-width: 740px) {
+    section ul{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .banner img{
+        position: absolute;
+        min-width: 40%;
+        max-width: 45%;
+        height: 70%;
+        left: 20px;
+        bottom: 100px;
+    }
 }
