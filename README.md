@@ -33,4 +33,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Mock-up
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](../images/example.gif)
+![portfolio demo](./images/example.gif)
